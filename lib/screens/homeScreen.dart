@@ -29,7 +29,9 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   InkWell(
                     borderRadius: BorderRadius.circular(5),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/mainScreen');
+                    },
                     splashColor: Colors.black26,
                     child: Ink(
                       decoration: BoxDecoration(
@@ -64,7 +66,9 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   InkWell(
                     borderRadius: BorderRadius.circular(5),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/mainScreen');
+                    },
                     splashColor: Colors.black26,
                     child: Ink(
                       decoration: BoxDecoration(
@@ -99,7 +103,9 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   InkWell(
                     borderRadius: BorderRadius.circular(5),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/mainScreen');
+                    },
                     splashColor: Colors.black26,
                     child: Ink(
                       decoration: BoxDecoration(
@@ -134,7 +140,9 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   InkWell(
                     borderRadius: BorderRadius.circular(5),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/mainScreen');
+                    },
                     splashColor: Colors.black26,
                     child: Ink(
                       decoration: BoxDecoration(

@@ -14,8 +14,9 @@ class _ViewUserState extends State<ViewUser> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color.fromRGBO(133, 97, 64, 1),
         appBar: AppBar(
-          title: const Text("SQLite CRUD"),
+          title: const Text("Gestão de Livros - SQLite"),
         ),
         body: Container(
           padding: EdgeInsets.all(16.0),
@@ -23,10 +24,10 @@ class _ViewUserState extends State<ViewUser> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                "Full Details",
+                "Sobre o Livro:",
                 style: TextStyle(
                     fontWeight: FontWeight.w600,
-                    color: Colors.blueGrey,
+                    color: Colors.white,
                     fontSize: 20),
               ),
               const SizedBox(
@@ -34,9 +35,9 @@ class _ViewUserState extends State<ViewUser> {
               ),
               Row(
                 children: [
-                  const Text('Name',
+                  const Text('Nome',
                       style: TextStyle(
-                          color: Colors.teal,
+                          color: Colors.white,
                           fontSize: 16,
                           fontWeight: FontWeight.w600)),
                   Padding(
@@ -51,9 +52,9 @@ class _ViewUserState extends State<ViewUser> {
               ),
               Row(
                 children: [
-                  const Text('Contact',
+                  const Text('Autor',
                       style: TextStyle(
-                          color: Colors.teal,
+                          color: Colors.white,
                           fontSize: 16,
                           fontWeight: FontWeight.w600)),
                   Padding(
@@ -69,9 +70,9 @@ class _ViewUserState extends State<ViewUser> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('Description',
+                  const Text('Descrição',
                       style: TextStyle(
-                          color: Colors.teal,
+                          color: Colors.white,
                           fontSize: 16,
                           fontWeight: FontWeight.w600)),
                   const SizedBox(

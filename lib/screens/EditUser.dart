@@ -33,7 +33,7 @@ class _EditUserState extends State<EditUser> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("SQLite CRUD"),
+        title: const Text("Gestão de Livros - SQLite"),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -42,10 +42,10 @@ class _EditUserState extends State<EditUser> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                'Edit New User',
+                'Edição de dados',
                 style: TextStyle(
                     fontSize: 20,
-                    color: Colors.teal,
+                    color: Colors.brown,
                     fontWeight: FontWeight.w500),
               ),
               const SizedBox(
@@ -55,10 +55,10 @@ class _EditUserState extends State<EditUser> {
                   controller: _userNameController,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
-                    hintText: 'Enter Name',
-                    labelText: 'Name',
+                    hintText: 'Título do livro',
+                    labelText: 'Título',
                     errorText:
-                        _validateName ? 'Name Value Can\'t Be Empty' : null,
+                        _validateName ? 'Título Value Can\'t Be Empty' : null,
                   )),
               const SizedBox(
                 height: 20.0,
@@ -67,11 +67,10 @@ class _EditUserState extends State<EditUser> {
                   controller: _userContactController,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
-                    hintText: 'Enter Contact',
-                    labelText: 'Contact',
-                    errorText: _validateContact
-                        ? 'Contact Value Can\'t Be Empty'
-                        : null,
+                    hintText: 'Nome do autor',
+                    labelText: 'Autor',
+                    errorText:
+                        _validateContact ? 'Autor Value Can\'t Be Empty' : null,
                   )),
               const SizedBox(
                 height: 20.0,
@@ -80,10 +79,10 @@ class _EditUserState extends State<EditUser> {
                   controller: _userDescriptionController,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
-                    hintText: 'Enter Description',
-                    labelText: 'Description',
+                    hintText: 'Breve descrição',
+                    labelText: 'Resumo',
                     errorText: _validateDescription
-                        ? 'Description Value Can\'t Be Empty'
+                        ? 'Resumo Value Can\'t Be Empty'
                         : null,
                   )),
               const SizedBox(
@@ -94,7 +93,7 @@ class _EditUserState extends State<EditUser> {
                   TextButton(
                       style: TextButton.styleFrom(
                           primary: Colors.white,
-                          backgroundColor: Colors.teal,
+                          backgroundColor: Colors.brown,
                           textStyle: const TextStyle(fontSize: 15)),
                       onPressed: () async {
                         setState(() {
@@ -121,7 +120,7 @@ class _EditUserState extends State<EditUser> {
                           Navigator.pop(context, result);
                         }
                       },
-                      child: const Text('Update Details')),
+                      child: const Text('Atualizar Informações')),
                   const SizedBox(
                     width: 10.0,
                   ),
@@ -135,7 +134,7 @@ class _EditUserState extends State<EditUser> {
                         _userContactController.text = '';
                         _userDescriptionController.text = '';
                       },
-                      child: const Text('Clear Details'))
+                      child: const Text('Limpar Dados'))
                 ],
               )
             ],
